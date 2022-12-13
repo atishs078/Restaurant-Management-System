@@ -1,0 +1,203 @@
+<html>
+
+<body>
+    <link href='https://css.gg/instagram.css' rel='stylesheet'>
+    <style>
+        body {
+            margin: auto;
+        }
+
+
+
+        .animate-charcter {
+
+            text-align: center;
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    #231557 0%,
+                    #44107a 29%,
+                    #ff1361 67%,
+                    #fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 50px;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        button,
+        button::after {
+            width: 380px;
+            height: 86px;
+            font-size: 36px;
+            font-family: 'Bebas Neue', cursive;
+            background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+            border: 0;
+            color: #fff;
+            letter-spacing: 3px;
+            line-height: 88px;
+            box-shadow: 6px 0px 0px #00E6F6;
+            outline: transparent;
+            position: relative;
+        }
+
+        button::after {
+            --slice-0: inset(50% 50% 50% 50%);
+            --slice-1: inset(80% -6px 0 0);
+            --slice-2: inset(50% -6px 30% 0);
+            --slice-3: inset(10% -6px 85% 0);
+            --slice-4: inset(40% -6px 43% 0);
+            --slice-5: inset(80% -6px 5% 0);
+
+            content: 'AVAILABLE NOW';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+            text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+            clip-path: var(--slice-0);
+        }
+
+        button:hover::after {
+            animation: 1s glitch;
+            animation-timing-function: steps(2, end);
+            cursor: pointer;
+        }
+
+        @keyframes glitch {
+            0% {
+                clip-path: var(--slice-1);
+                transform: translate(-20px, -10px);
+            }
+
+            10% {
+                clip-path: var(--slice-3);
+                transform: translate(10px, 10px);
+            }
+
+            20% {
+                clip-path: var(--slice-1);
+                transform: translate(-10px, 10px);
+            }
+
+            30% {
+                clip-path: var(--slice-3);
+                transform: translate(0px, 5px);
+            }
+
+            40% {
+                clip-path: var(--slice-2);
+                transform: translate(-5px, 0px);
+            }
+
+            50% {
+                clip-path: var(--slice-3);
+                transform: translate(5px, 0px);
+            }
+
+            60% {
+                clip-path: var(--slice-4);
+                transform: translate(5px, 10px);
+            }
+
+            70% {
+                clip-path: var(--slice-2);
+                transform: translate(-10px, 10px);
+            }
+
+            80% {
+                clip-path: var(--slice-5);
+                transform: translate(20px, -10px);
+            }
+
+            90% {
+                clip-path: var(--slice-1);
+                transform: translate(-10px, 0px);
+            }
+
+            100% {
+                clip-path: var(--slice-1);
+                transform: translate(0);
+            }
+        }
+
+        .our_food_items {
+            margin-left: 400px;
+            margin-bottom: 220px;
+
+        }
+
+        .bottom_menu a {
+            text-decoration: none;
+            color: white;
+            float: left;
+            display: block;
+            padding: 12px 14px;
+        }
+
+        .bottom_menu a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .bottom_menu {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <center>
+                    <h3 class="animate-charcter"> Welcome to Hotel Taj</h3>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="see-details">
+        <div class="about_us">
+            <button type="button" onclick="" value="About us">About us</button>
+
+        </div>
+        <div class="our_food_items">
+            <button type="button" onclick="window.location.href='menu.html'" value="Place order">Place Order</button>
+        </div>
+    </div>
+    <div class="bottom_menu">
+        <ul>
+            <a href="#Home">Home</a>
+            <a href="#Contact">Contact</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#Developer">Developer</a>
+
+        </ul>
+
+    </div>
+
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
